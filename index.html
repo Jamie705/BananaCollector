@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Psychic Game</title>
+    <title>The Crystal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+
 </head>
 
 <body>
+<h1>Number to Guess: <span id="randomNumber"></span></h1>
 
-  <h1> The Crystal Collector Game</h1>
-    <div id="crystal">
+  <h2> The Crystal Collector Game</h2>
+    <!-- Note that this div is now empty. We will fill it dynamically -->
+    <div id="crystals">
+    </div>
+  
+  <div id="crystal">
         <div id="instructions">
             <p>You will be given a random number at the start of the game. 
             <br>
@@ -26,19 +33,15 @@
 
         <p id="wins">Wins: 0</p>
         <p id="losses">Losses: 0</p>
-        <p id="guessesleft">Guesses Left: 0</p>
-        <p id="userguessed">Your Guesses so far: 0</p>
+        <p id="gemTotal">Gem Total: 0</p>
         <div class="gems">
-            <img src="assets/images/AquaGem.jpg" width="100px">
-            <img src="assets/images/BlackDiamond.jpg"width="100px">
-            <img src="assets/images/OrangeGem.jpg" width="100px">
-            <img src="assets/images/PinkDiamond.jpg" width="100px">
+            <img id="img1" src="assets/images/AquaGem.jpg" width="100px">
+            <img id="img2" src="assets/images/BlackDiamond.jpg"width="100px">
+            <img id="img3" src="assets/images/OrangeGem.jpg" width="100px">
+            <img id="img4" src="assets/images/PinkDiamond.jpg" width="100px">
         </div>
 
-        <div id="number" >
-            <p>Number to Guess: </p>
-            <p>??</p>
-        </div>
+        
     </div>
 <!-- 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk). 
@@ -58,7 +61,7 @@ random number. Also, all the crystals will have four new hidden values. Of cours
 reset to zero. 
 
 * The app should show the number of games the player wins and loses. To that end, do not refresh the page
-as a means to restart the game. ##### Option 1 Game design notes 
+as a means to restart the game. ##### Option 1 Game desiSSgn notes 
 
 * The random number shown at the start of the game should
 be between 19 - 120. 
