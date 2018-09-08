@@ -1,72 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Crystal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Banana Collector</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/css_reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto|Slackey" rel="stylesheet">
 
-</head>
+    </head>
 
-<body>
-<h1>Number to Guess: <span id="randomNumber"></span></h1>
+    <body>
+        
+    <h1> The Banana Collector</h1>
 
-  <h2> The Crystal Collector Game</h2>
-    <!-- Note that this div is now empty. We will fill it dynamically -->
-    <div id="crystals">
-    </div>
-  
-  <div id="crystal">
+    <!-- wrapper for instructions & score board-->
+    <div id="Banana">    
+    <h2 class="Score">Number to Guess: <span id="randomNumber"></span></h2>
+
+            <!-- score board -->
+        <div class="Score">
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+            <p id="gemTotal">Gem Total: 0</p>
+        </div>
+    
+
         <div id="instructions">
-            <p>You will be given a random number at the start of the game. 
+            <p>You will be given a random number at the start of the game.  There are four minions on the right.  
+                By clicking on a minion you will add a specific amount of points to your total score. </p>
             <br>
-            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<!DOCTYPE html>
-            <br>
-            You win the game by matching your total score to random number, you lose the game if your total score goes above the random numberl
-            <br>
-            The value of each crystal is hidden from you until you click on it.
-            <br>
-            Each time the game starts, the game will change the values of each crystal.  
-            </p>    
 
-        <p id="wins">Wins: 0</p>
-        <p id="losses">Losses: 0</p>
-        <p id="gemTotal">Gem Total: 0</p>
-        <div class="gems">
-            <img id="img1" src="assets/images/AquaGem.jpg" width="100px">
-            <img id="img2" src="assets/images/BlackDiamond.jpg"width="100px">
-            <img id="img3" src="assets/images/OrangeGem.jpg" width="100px">
-            <img id="img4" src="assets/images/PinkDiamond.jpg" width="100px">
+            <p>You win the game by matching your total score to random number.  You lose the game if your total score goes above the random number.  
+            The value of each minion is hidden from you until you click on it.  Each time the game starts, the game will change the values of each minion.</p>  
+                   
         </div>
 
-        
     </div>
-<!-- 
-1. [Watch the demo](https://youtu.be/yNI0l2FMeCk). 
+                <!-- pictures -->
+        <div class="minions">
+            <img id="img1" src="assets/images/Minion2.png" width="200px">
+            <img id="img2" src="assets/images/Minion1.png"width="300px">
+            <img id="img3" src="assets/images/Minion00.png" width="200px">
+            <img id="img4" src="assets/images/Minion3.png" width="150px">
+        </div>      
+        
 
-2. The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters. 
-
-3. Here's how the app works: 
-
-* There will be four crystals displayed as buttons on the page. 
-* The player will be shown a random number at the start of the game. 
-* When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
-* Your game will hide this amount until the player clicks a crystal. * When they do click one, update the player's score counter. 
-* The player wins if their total score matches the random number from the beginning of the game. 
-* The player loses if their score goes above the random number. 
-* The game restarts whenever the player wins or loses. * When the game begins again, the player should see a new
-random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will
-reset to zero. 
-
-* The app should show the number of games the player wins and loses. To that end, do not refresh the page
-as a means to restart the game. ##### Option 1 Game desiSSgn notes 
-
-* The random number shown at the start of the game should
-be between 19 - 120. 
-
-* Each crystal should have a random hidden value between 1 - 12. -->
-
-</body>
-</html>
+    <!-- ====================================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+    </html>
