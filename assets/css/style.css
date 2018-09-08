@@ -1,6 +1,8 @@
 body {
     /*! display: inline-block; */
     background-image: url(../images/wallhaven191216.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Passion One', cursive,Arial, Helvetica, sans-serif;
     font-size: 30px;
     margin: 2% 3%;
