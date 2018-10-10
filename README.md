@@ -18,9 +18,9 @@ Here's how the app works:
 
    * The game restarts whenever you win or lose.
 
-*Technologies Used
-Html
-CSS
-Bootstrap
-JavaScript
-JQuery used
+*Technologies Used*
+*Html
+*CSS
+*Bootstrap
+*JavaScript
+*JQuery used
