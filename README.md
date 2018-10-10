@@ -1,5 +1,6 @@
-# unit-4game
-Banana Collector Game
+#Banana Collector Game
+
+https://jamie705.github.io/BananaCollector/
 
 You will have to guess the answer. 
 
@@ -17,4 +18,9 @@ Here's how the app works:
 
    * The game restarts whenever you win or lose.
 
-//JavaScript & JQuery used
+*Technologies Used
+Html
+CSS
+Bootstrap
+JavaScript
+JQuery used
